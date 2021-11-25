@@ -6,12 +6,15 @@
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </head>
     <body>
+        <form action = "http://127.0.0.1:5000/login" method = "post">
         <div class="container p-5">
             <div class="card">
                 <h1>LOGIN</h1>
-                <input type="text" class="form-control-sm" placeholder="Enter email">
-                <input type="password" class="form-control-sm" placeholder="Enter password">
+                <input type="text" name="email" class="form-control-sm" placeholder="Enter email">
+                <input type="password" name="password" class="form-control-sm" placeholder="Enter password">
+                <input type="submit" value="submit" class="btn btn-primary">
             </div>
         </div>
+    </form>
     </body>
 </html>    
